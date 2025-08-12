@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alam Ko - AI-Powered Flashcard App</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            color: white;
+        }
+        
+        .logo {
+            font-size: 3.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .tagline {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+        
+        .main-content {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .feature {
+            text-align: center;
+            padding: 30px 20px;
+            background: #f8f9fa;
+            border-radius: 15px;
+            transition: transform 0.3s ease;
+        }
+        
+        .feature:hover {
+            transform: translateY(-5px);
+        }
+        
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        
+        .feature h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+        
+        .cta-section {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 15px;
+            margin: 40px 0;
+        }
+        
+        .download-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        
+        .download-btn {
+            display: inline-flex;
+            align-items: center;
+            padding: 12px 24px;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            border: 2px solid rgba(255,255,255,0.3);
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .download-btn:hover {
+            background: rgba(255,255,255,0.3);
+            transform: translateY(-2px);
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+            text-align: center;
+        }
+        
+        .stat {
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #667eea;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: white;
+            opacity: 0.8;
+        }
+        
+        .contact-info {
+            margin: 20px 0;
+        }
+        
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            opacity: 0.8;
+        }
+        
+        .contact-info a:hover {
+            opacity: 1;
+        }
+        
+        @media (max-width: 768px) {
+            .logo {
+                font-size: 2.5rem;
+            }
+            
+            .tagline {
+                font-size: 1.1rem;
+            }
+            
+            .main-content {
+                padding: 20px;
+                margin: 20px 10px;
+            }
+            
+            .download-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">🧠 Alam Ko</div>
+            <div class="tagline">AI-Powered Flashcard Learning for Filipino Students</div>
+            <p>Transform any content into smart flashcards instantly</p>
+        </header>
+        
+        <div class="main-content">
+            <h1 style="text-align: center; color: #667eea; margin-bottom: 30px;">
+                Learn Smarter, Not Harder
+            </h1>
+            
+            <p style="text-align: center; font-size: 1.2rem; margin-bottom: 40px; color: #666;">
+                Alam Ko uses cutting-edge AI to convert your study materials into personalized flashcards. 
+                Perfect for Filipino students who want to maximize their learning efficiency.
+            </p>
+            
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon">🤖</div>
+                    <h3>AI-Powered Generation</h3>
+                    <p>Upload any document, image, or text and let our AI create perfect flashcards for you. Powered by OpenAI GPT-4.</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">📱</div>
+                    <h3>Cross-Platform</h3>
+                    <p>Available on both iOS and Android. Study anywhere, anytime with seamless sync across all your devices.</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Smart Learning</h3>
+                    <p>Adaptive algorithms track your progress and focus on areas where you need the most practice.</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">🇵🇭</div>
+                    <h3>Filipino-Friendly</h3>
+                    <p>Designed specifically for Filipino students with Taglish support and culturally relevant examples.</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">💰</div>
+                    <h3>Affordable Learning</h3>
+                    <p>Credit-based system with multiple purchase options. Watch ads to earn free credits!</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Secure & Private</h3>
+                    <p>Your data is protected with enterprise-grade security. Study with confidence.</p>
+                </div>
+            </div>
+            
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-number">10,000+</div>
+                    <div>Flashcards Generated</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">500+</div>
+                    <div>Active Students</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">95%</div>
+                    <div>Improved Grades</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">4.8★</div>
+                    <div>App Store Rating</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="cta-section">
+            <h2 style="margin-bottom: 20px;">Ready to Transform Your Learning?</h2>
+            <p style="margin-bottom: 30px; font-size: 1.1rem;">
+                Join thousands of Filipino students who are already learning smarter with Alam Ko.
+            </p>
+            
+            <div class="download-buttons">
+                <a href="https://apps.apple.com/ph/app/alam-ko/id6749509464" class="download-btn">
+                    📱 Download for iOS
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.alamko.app.alam_ko&hl=en-US&ah=KTZKN0xugu_H8ndhXhR4xQdzrqo&pli=1" class="download-btn">
+                    🤖 Download for Android
+                </a>
+            </div>
+        </div>
+        
+        <div class="main-content">
+            <h2 style="text-align: center; color: #667eea; margin-bottom: 30px;">
+                How It Works
+            </h2>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; text-align: center;">
+                <div>
+                    <div style="font-size: 3rem; margin-bottom: 15px;">📄</div>
+                    <h3 style="color: #667eea; margin-bottom: 10px;">1. Upload Content</h3>
+                    <p>Upload your notes, textbooks, or any study material in multiple formats.</p>
+                </div>
+                <div>
+                    <div style="font-size: 3rem; margin-bottom: 15px;">⚡</div>
+                    <h3 style="color: #667eea; margin-bottom: 10px;">2. AI Processing</h3>
+                    <p>Our AI analyzes your content and creates optimized flashcards instantly.</p>
+                </div>
+                <div>
+                    <div style="font-size: 3rem; margin-bottom: 15px;">🎓</div>
+                    <h3 style="color: #667eea; margin-bottom: 10px;">3. Start Learning</h3>
+                    <p>Review your flashcards with spaced repetition for maximum retention.</p>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <div class="contact-info">
+                <p><strong>Support:</strong> <a href="mailto:rdjsoftware1@gmail.com">rdjsoftware1@gmail.com</a></p>
+                <p><strong>Privacy Policy:</strong> <a href="rob-12334.github.io/AlamKo_PrivacyPolicy/privacy-policy.md">View Privacy Policy</a></p>
+                <p><strong>Developer:</strong> Rob Diaz Jr.</p>
+            </div>
+            <p>&copy; 2025 Alam Ko. All rights reserved.</p>
+            <p>Made with ❤️ for Filipino students</p>
+        </footer>
+    </div>
+</body>
+</html>
